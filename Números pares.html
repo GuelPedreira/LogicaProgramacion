@@ -1,0 +1,32 @@
+
+<meta charset="UTF-8">
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+    } 
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }    
+
+    imprimir ("Se muestran los números pares entre 1 y 100");
+
+    var numero = 2;
+
+    while (numero <= 100){
+
+        imprimir ("El " + numero + " es par");
+        numero = numero + 2
+    }
+
+    saltarLinea ();
+
+    imprimir ("FIN");
+
+</script>
+
+

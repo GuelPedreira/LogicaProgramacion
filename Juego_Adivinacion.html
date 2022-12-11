@@ -1,0 +1,67 @@
+
+<meta charset="UTF-8">
+
+<h1>PROGRAMA JUEGO DE ADIVINACION </h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var numeroPensado = Math.round(Math.random()*10);
+    var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"))
+
+    if (numeroPensado == numeroLanzado){
+        imprimir("usted acertó")
+    }
+
+    else {
+        imprimir("usted erró, el número pensado era " + numeroPensado)    
+    }
+
+</script>
+
+
+
+<!--
+<meta charset="UTF-8">
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var n = parseInt(prompt("Ingrese el número tope a salir en un sorteo"));
+    var numeroPensado = Math.round(Math.random()*n);
+    var numeroLanzado = parseInt(prompt("Ingrese un número entre 0 y " + n));
+
+    if (numeroPensado == numeroLanzado){
+        
+        imprimir("usted acertó. El número correcto es " + numeroPensado)
+    
+    }else{
+
+        if (numeroPensado < numeroLanzado){
+            imprimir("su número es mayor al del sorteo. El correcto era " + numeroPensado)
+        }                                                            
+
+        else {
+        imprimir("su número es menor al del sorteo. El correcto era " + numeroPensado)    
+        }
+
+</script>
+-->
+
